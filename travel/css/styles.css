@@ -1,0 +1,544 @@
+/*Styles for Great Adventures*/
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-size:100%;
+    font-family:verdana, helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #eee;
+    top:0;
+    left:0;
+    height:150px;
+}
+
+.top-row {
+    background: green;
+    height: 60px;
+
+}
+#logo {
+    margin: 20px 0;
+    float: left;
+}
+
+
+nav {
+    float: right;
+    margin-top:20px;
+}
+
+nav li {
+    float: left;
+    margin-left: 15px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+.dropdown {
+    display:none;
+}
+
+/*for the dropdown ul to display properly, position absolute! */
+nav li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background:orange;
+    padding:0 7px 5px 5px;
+}
+
+
+nav li:hover .dropdown li {
+    float:none;
+    margin-left:0px;
+    margin-top:3px;
+}
+
+.nav-button { display: none; } /* hide the navigation button by default */
+
+
+.home #hero {
+    background-image:url(../images/yellowstone-cropped.jpg);
+    background-position: 0 150px;
+    min-height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.inner-page #hero {
+    background-image:url(../images/yellowstone-cropped2.jpg);
+    background-position: 0 150px;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#hero img {
+    display:none;
+}
+
+.inner {
+   /* padding:20px 0; */
+    max-width: 1100px;
+    margin: 0 auto;
+    /*overflow: hidden; */
+}
+
+#wrapper {
+    max-width: 1100px;
+    margin: 30px auto 0 auto;
+    clear: both;
+}
+
+main {
+    float:left;
+    width: 61.70%;
+}
+
+aside {
+    float:right;
+    width:36.17%;
+}
+.staff-pics li {
+    float:left;
+    width:47.05%;
+    margin-right: 5.88%;
+    list-style-type: none;
+    margin-bottom:20px;
+}
+
+.staff-pics li:nth-child(2),
+.staff-pics li:nth-child(4),
+.staff-pics li:nth-child(6), 
+.staff-pics li:nth-child(8){
+    margin-right: 0;
+}
+
+.box {
+    background:#ddd;
+    padding:3%;
+}
+
+/* Beware of overflow hidden in your navigation -- do not use */
+.row {
+    margin-bottom: 20px;
+    overflow: hidden;
+    clear:both;
+}
+
+.third {
+    width:31.91%;
+    float:left;
+    margin-right: 2.12%;
+   /* margin-bottom: 15px; */
+}
+
+.third:last-of-type, 
+.col-8:last-of-type 
+{
+    margin-right:0;
+}
+
+.col-8 {
+    width: 48.93%;
+    float: left;
+    background: beige;
+    margin-right: 2.12%;
+}
+
+table {
+  width:100%;
+}
+table, th, td {
+  border: none;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+th {
+    background-color: #eee;
+    font-size: 1.0em;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: #eee;
+}
+
+footer {
+    overflow: hidden;
+    clear: both;
+    background: orange;
+    padding-top: 33px;
+}
+
+.extra {
+	text-align: center;
+	padding-top: 33px;
+	clear: both;
+}
+
+.brown-box {
+    background:green;
+    padding:3%;
+    padding-top: 25px
+}
+
+.buy {
+	padding: 20px;
+	clear: both;
+    text-align: center;
+    font-size: 1.1rem;
+    background: #eee;
+}
+
+
+#copyright {
+    height:50px;
+    line-height: 50px;
+    font-size:.9em;
+}
+
+#copyright ul {
+    float:right;
+    margin-right:5%;
+}
+
+#copyright li {
+    float:left;
+    margin-left:15px;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    display:block;
+}
+
+/*++++++ Typography ++++++++ */
+
+.home h1 {
+    font-size:3.6em;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 9px;
+    font-family: playfair, serif;
+}
+
+blockquote {
+    font-size:2em;
+    font-family: playfair, serif;
+    text-align: center;
+    margin:0 8% 20px 8%;
+}
+
+p {
+   margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height:1.4;
+}
+
+.important {
+    font-size: 1.4em;
+    margin: 0 5% 25px 5%;
+}
+
+.important-tours {
+    text-align: center;
+    background: #eee;
+    overflow: hidden;
+    clear: both;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.read-more {
+    display: block;
+}
+
+main p {
+    font-size: 1.1em;
+}
+
+aside p {
+    font-size:.98em;
+}
+
+.third p,
+.col-8 p {
+    font-size: 1em;
+}
+
+
+
+
+@media screen and (max-width: 1160px) {
+    .inner {
+    margin: 0 30px;
+}
+
+#wrapper {
+    margin: 30px;
+}
+
+}
+
+
+@media screen and (max-width: 1110px) {
+    
+body {
+        }
+    
+    
+.home #hero {
+    background-image: none;
+    background-position: 0;
+    min-height: auto;
+}
+
+ .inner-page #hero {
+    background-image: none;
+    background-position: 0;
+    min-height: auto;
+}
+
+    
+    
+#hero img {
+    display: block;
+    margin-top: 150px;
+}
+
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .third {
+    width:auto;
+    float:none;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+    .third img {
+        margin:0 auto;
+    }
+    
+     .inner {
+    margin: 0 15px;
+}
+
+    #wrapper {
+    margin: 30px 15px;
+}
+    
+    main {
+    width: 58.70%;
+}
+
+    aside {
+    float:right;
+    width:38.17%;
+}
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    
+.col-8 {
+    width: auto;
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+    .col-8 img {
+        margin:0 auto;
+    }
+    
+    header {
+    position: static;
+    width: auto;
+    background: #eee;
+    top:0;
+    left:0;
+    height:150px;
+}
+    #hero img {
+    margin-top: 0px;
+}
+    #logo {
+        margin: 20px auto;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+
+	/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: fixed;
+		top: 7px;
+		left: 7px;
+		width: 50px;
+		height: 35px;
+		background: url('../images/menu-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		cursor: pointer;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
+		border-radius: 5px;
+		z-index: 999;
+		text-indent: -9999px;
+	}
+	.nav-button:hover {
+		background-color: rgba(0,0,0,.1);
+	}
+	.nav-button.open {
+		background: url('../images/close-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+
+	body { padding-top: 50px; }
+
+	.primary-nav {
+		width: 100%;
+		float: none;
+		background-color: tan; /* change the menu color */
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		display: block;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0,0,0,.6);
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 998;
+		clear: both;
+	}
+    
+    nav li {
+    margin-left: 0px;
+}
+    
+    nav li:hover .dropdown {
+        display: block;
+        position:static;
+        background:none;
+        padding:0;
+    }
+    
+    nav li:hover .dropdown li {
+    float:none;
+    margin-left:0px;
+    margin-top:3px;
+}
+    
+	.primary-nav li {
+		display: none;
+		width: 100%;
+		font-family: Arial;
+	}
+	.primary-nav li a {
+		display: block;
+		width: 100%;
+		padding: 10px 5%;
+		font-size: 14px;
+		font-weight: bold;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+	.primary-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+	.primary-nav > li:first-child {
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+	/* Toggle the navigation bar open  */
+
+	.primary-nav.open {
+		height: auto;
+		padding-top: 50px;
+	}
+	.primary-nav.open li {
+		display: block;
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	.primary-nav > li:hover > a {
+		background: rgba(0,0,0,.5);
+		border-bottom-color: transparent;
+	}
+	.primary-nav li.parent > a:after {
+		content: "▼";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+	.primary-nav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+	.primary-nav li ul {
+		display: none;
+		background: rgba(0,0,0,.5);
+		border-top: 0 none;
+		padding: 0;
+	}
+	.primary-nav li ul a {
+		border: 0 none;
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	.primary-nav li:hover ul {
+		display: block;
+		border-top: 0 none;
+	}
+
+} /* End Mobile Styles */
